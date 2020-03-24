@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import helpers from "../helpers";
 import { withRouter } from 'react-router-dom';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { ToastContainer, toast } from 'react-toastify';
@@ -9,8 +8,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import Navbar from "./Navbar";
 import PlanetDetails from "./PlanetDetails";
 import axios from "axios";
-const restURL = helpers.restURL;
-var url = window.location.origin;
 class WarList extends Component {
 
     constructor(props) {
